@@ -4,7 +4,7 @@ Roteiro interativo de inglês para estudante B1, com foco em listening, gramáti
 
 ## Usar localmente
 
-Abra `index.html` em um navegador moderno. O roteiro contém um ciclo inicial de 12 semanas, com sete sessões diárias de 15 minutos em cada semana. Abra uma semana e selecione um dia para ver tarefa, recurso, duração e resultado esperado. Marque a caixa para computar a sessão. Clique em expressões do vocabulário para marcá-las como estudadas.
+Abra `index.html` em um navegador moderno. O roteiro contém um ciclo inicial de 13 semanas, com sete sessões diárias de 15 minutos em cada semana. Abra uma semana e selecione um dia para ver tarefa, recurso, duração e resultado esperado. Marque a caixa para computar a sessão. Clique em expressões do vocabulário para marcá-las como estudadas.
 
 O progresso é salvo em `localStorage` no navegador atual. Ele fica separado por navegador, perfil e dispositivo e pode ser apagado ao limpar os dados do site. Use **Exportar progresso** para baixar um backup JSON e **Importar** para restaurá-lo em outro navegador.
 
