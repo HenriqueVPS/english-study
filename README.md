@@ -18,7 +18,7 @@ GitHub Actions publica os arquivos da página; ele não executa um banco de dado
 
 ## Organização do estudo
 
-- O roteiro lista 70–100 expressões por semana, alinhadas ao tema. Clique nas expressões para manter uma lista leve do que já revisou.
+- O roteiro lista 70–100 expressões por semana como banco de consulta, não como meta de memorização. Escolha até três expressões por sessão e use-as em frases próprias; clique para ver significado e exemplos.
 - Cada dia dura 15 minutos e inclui prática guiada de input compreensível, escuta, fala, gramática em contexto ou revisão.
 - Use legendas/transcrições em inglês como apoio depois da primeira escuta sem texto. O foco é compreender a mensagem antes de estudar detalhes.
 - O plano de 12 semanas é o primeiro ciclo, não uma promessa de C1 em três meses. Com 15 minutos ativos ao dia, a estimativa prudente para B1→C1 funcional é 4–7 anos ou mais; oportunidades regulares de conversa e exposição adicional afetam muito o prazo.
