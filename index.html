@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7ab056a">
-  <script src="app.js?v=7ab056a" defer></script>
+  <link rel="stylesheet" href="styles.css?v=guided-listening-20261006">
+  <script src="app.js?v=guided-listening-20261006" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -33,7 +33,7 @@
       <div class="progress-card">
         <div class="progress-heading"><div><span class="eyebrow">PROGRESSO GERAL</span><div class="progress-number"><strong id="overall-percent">0%</strong><span>do roteiro concluído</span></div></div><div class="progress-icon">↗</div></div>
         <div class="progress-track"><span id="overall-bar"></span></div>
-        <div class="progress-foot"><span id="completed-count">0 de 91 sessões</span><span id="week-count">Semana 1 de 13</span></div>
+        <div class="progress-foot"><span id="completed-count">0 de 91 sessões</span><label class="week-jump-label" for="week-jump">Semana <select id="week-jump" aria-label="Ir para a semana"></select> de 13</label></div>
         <div class="progress-note"><span>✦</span><span>Seu progresso é salvo neste navegador.<br><b>Faça um backup</b> antes de trocar de dispositivo.</span></div>
       </div>
       <div class="hero-decoration" aria-hidden="true">01<br>→<br>12</div>
@@ -76,6 +76,16 @@
     <section class="estimate"><div class="estimate-mark">✳</div><div><div class="eyebrow">EXPECTATIVA REALISTA</div><h2>O progresso é feito de exposição acumulada.</h2><p>Este ciclo organiza as primeiras 13 semanas. Com 15 minutos ativos por dia, a estimativa prudente para B1 → C1 funcional é de <b>4–7 anos ou mais</b>. Conversas regulares e imersão compreensível fora da sessão ajudam a aumentar o contato. Reavalie a cada 12 semanas com um áudio novo, resumo oral e registro das lacunas.</p></div></section>
   </main>
   <footer><a class="brand" href="#top"><span class="brand-mark">EQ</span><span>english<span class="brand-light">quest</span></span></a><span>Seu próximo passo: abra a Semana 1 e dê play. ▶</span><span>Feito para aprender no seu ritmo.</span></footer>
+  <dialog class="listening-dialog" id="listening-dialog" aria-labelledby="listening-title">
+    <div class="vocab-dialog-head"><div><div class="eyebrow">PRÁTICA GUIADA · 15 MIN</div><h2 id="listening-title">Listening em 4 passagens</h2></div><button class="dialog-close" id="listening-close" type="button" aria-label="Fechar treino de listening">×</button></div>
+    <p class="listening-intro" id="listening-intro"></p>
+    <button class="video-open-button listening-video-button" id="listening-video-open" type="button">Abrir o vídeo desta semana ▶</button>
+    <div class="listening-steps" id="listening-steps"></div>
+    <div class="listening-history" id="listening-history" aria-live="polite"></div>
+    <fieldset class="confidence-field"><legend>Quanto você entendeu sem legenda?</legend><div><label><input type="radio" name="listening-confidence" value="1"> Quase nada</label><label><input type="radio" name="listening-confidence" value="2"> A ideia geral</label><label><input type="radio" name="listening-confidence" value="3"> A maior parte</label><label><input type="radio" name="listening-confidence" value="4"> Quase tudo</label></div></fieldset>
+    <label class="listening-note-label" for="listening-note">Anote uma frase ou lacuna para rever <span>(opcional)</span></label><textarea id="listening-note" rows="2" maxlength="240" placeholder="Ex.: I missed the phrase after “usually…”"></textarea>
+    <button id="listening-save" class="complete-button listening-save" type="button">Salvar reflexão</button>
+  </dialog>
   <dialog class="vocab-dialog" id="vocab-dialog" aria-labelledby="vocab-dialog-title">
     <div class="vocab-dialog-head"><div><div class="eyebrow">FICHA DE VOCABULÁRIO</div><h2 id="vocab-dialog-title"></h2></div><button class="dialog-close" id="vocab-close" type="button" aria-label="Fechar ficha">×</button></div>
     <div class="vocab-meaning"><div class="vocab-section-label">SIGNIFICADO EM PORTUGUÊS</div><p id="vocab-translation" aria-live="polite">Buscando tradução…</p><small id="vocab-meaning-note">Tradução automática para orientar; o contexto ajuda a escolher o sentido.</small></div>
