@@ -80,8 +80,14 @@
     <div class="vocab-dialog-head"><div><div class="eyebrow">FICHA DE VOCABULÁRIO</div><h2 id="vocab-dialog-title"></h2></div><button class="dialog-close" id="vocab-close" type="button" aria-label="Fechar ficha">×</button></div>
     <div class="vocab-meaning"><div class="vocab-section-label">SIGNIFICADO EM PORTUGUÊS</div><p id="vocab-translation" aria-live="polite">Buscando tradução…</p><small id="vocab-meaning-note">Tradução automática para orientar; o contexto ajuda a escolher o sentido.</small></div>
     <div class="vocab-examples"><div class="vocab-section-label">USO NO COTIDIANO</div><div id="vocab-example-list"></div></div>
+    <div class="vocab-related-video" id="vocab-related-video" hidden><div><div class="vocab-section-label">OUÇA EM CONTEXTO</div><p id="vocab-video-title"></p></div><button id="vocab-video-open" class="video-open-button" type="button">Ver vídeo ▶</button></div>
     <div class="vocab-dialog-actions"><div class="vocab-reference-links"><a id="vocab-youglish" target="_blank" rel="noreferrer">Ouvir exemplos reais ↗</a><a id="vocab-cambridge" target="_blank" rel="noreferrer">Ver no Cambridge ↗</a></div><button id="vocab-complete" class="complete-button" type="button">Concluir</button></div>
     <p class="vocab-privacy-note">Quando não houver tradução no glossário local, somente a expressão em inglês será enviada ao serviço de tradução. O resultado fica guardado neste navegador.</p>
+  </dialog>
+  <dialog class="video-dialog" id="video-dialog" aria-labelledby="video-dialog-title">
+    <div class="video-dialog-head"><div><div class="eyebrow" id="video-dialog-channel"></div><h2 id="video-dialog-title"></h2><p id="video-dialog-focus"></p></div><button class="dialog-close" id="video-close" type="button" aria-label="Fechar vídeo">×</button></div>
+    <div class="video-frame"><iframe id="video-frame" title="Vídeo recomendado para estudar inglês" src="about:blank" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="video-dialog-foot"><p id="video-dialog-task"></p><a id="video-youtube-link" target="_blank" rel="noreferrer">Abrir no YouTube ↗</a></div>
   </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>

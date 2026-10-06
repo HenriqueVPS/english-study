@@ -8,6 +8,8 @@ Abra `index.html` em um navegador moderno. O roteiro contém um ciclo inicial de
 
 O progresso e as traduções consultadas são salvos em `localStorage` no navegador atual. Para buscar a tradução, a expressão em inglês clicada é enviada ao serviço MyMemory; nenhum dado pessoal é incluído. O armazenamento fica separado por navegador, perfil e dispositivo e pode ser apagado ao limpar os dados do site. Use **Exportar progresso** para baixar um backup JSON e **Importar** para restaurá-lo em outro navegador.
 
+Cada semana também traz uma curadoria de vídeo do BBC Learning English ou Learn English With TV Series, com trecho/objetivo e uma atividade curta. Clique em **Assistir no modal** para abrir o player incorporado; ele só carrega após o clique e para ao fechar. O link **Abrir no YouTube** serve de alternativa se o vídeo não permitir incorporação. Algumas expressões relacionadas a cada tema também oferecem o vídeo na ficha de vocabulário. Na semana de bugs de programação, o roteiro recomenda usar um tutorial familiar escolhido no seu próprio barril em vez de forçar um vídeo sem relação direta.
+
 ## Publicar com GitHub Pages
 
 O workflow em `.github/workflows/pages.yml` publica a raiz do repositório no GitHub Pages a cada push para `main` ou acionamento manual. No GitHub, abra **Settings → Pages**, escolha **GitHub Actions** como fonte de build/deploy e envie os arquivos para `main`. O endereço publicado aparece na execução bem-sucedida do workflow.
