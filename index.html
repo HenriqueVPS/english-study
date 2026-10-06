@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151914">
+  <meta name="description" content="Roteiro interativo de inglês B1 a C1 com sessões de 15 minutos, listening, gramática e vocabulário.">
+  <title>English Quest — B1 → C1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="English Quest início"><span class="brand-mark">EQ</span><span>english<span class="brand-light">quest</span></span></a>
+    <nav class="topnav" aria-label="Navegação principal">
+      <a href="#roadmap">Roteiro</a><a href="#toolkit">Método</a>
+      <button class="quiet-button" id="export-button" type="button">Exportar progresso</button>
+      <label class="import-button" for="import-file">Importar</label><input id="import-file" type="file" accept="application/json" hidden>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> SEU PLANO · NÍVEL B1</div>
+        <h1>English<br><span>Quest.</span></h1>
+        <p class="hero-description">Um caminho prático até conversas confiantes em inglês. Quinze minutos por dia, com seus interesses no centro.</p>
+        <div class="hero-tags"><span>🎮 Minecraft</span><span>⌘ Programação</span><span>🎧 Listening</span></div>
+      </div>
+      <div class="progress-card">
+        <div class="progress-heading"><div><span class="eyebrow">PROGRESSO GERAL</span><div class="progress-number"><strong id="overall-percent">0%</strong><span>do roteiro concluído</span></div></div><div class="progress-icon">↗</div></div>
+        <div class="progress-track"><span id="overall-bar"></span></div>
+        <div class="progress-foot"><span id="completed-count">0 de 84 sessões</span><span id="week-count">Semana 1 de 12</span></div>
+        <div class="progress-note"><span>✦</span><span>Seu progresso é salvo neste navegador.<br><b>Faça um backup</b> antes de trocar de dispositivo.</span></div>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">01<br>→<br>12</div>
+    </section>
+
+    <section class="stats-row" aria-label="Resumo do plano">
+      <div class="stat"><span class="stat-icon">◷</span><div><strong>15 min</strong><small>por dia</small></div></div>
+      <div class="stat"><span class="stat-icon">▦</span><div><strong>12 semanas</strong><small>primeiro ciclo guiado</small></div></div>
+      <div class="stat"><span class="stat-icon">⌁</span><div><strong>Listening + fala</strong><small>prioridade de treino</small></div></div>
+      <div class="stat"><span class="stat-icon">◎</span><div><strong>4–7 anos*</strong><small>estimativa prudente até C1</small></div></div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap">
+      <div class="section-heading"><div><div class="eyebrow">SEU CAMINHO</div><h2>Roteiro de estudos</h2></div><div class="heading-side">12 semanas · 84 sessões<br><span>Abra uma semana para ver os detalhes.</span></div></div>
+      <div class="roadmap-layout">
+        <aside class="roadmap-rail"><div class="rail-line"></div><div class="rail-label active"><i>01</i><span>Começando</span></div><div class="rail-label"><i>04</i><span>Ganhando ritmo</span></div><div class="rail-label"><i>08</i><span>Independência</span></div><div class="rail-label"><i>12</i><span>Próximo nível</span></div><div class="rail-caption">B1 → B2 foundations</div></aside>
+        <div class="weeks" id="weeks-container" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="toolkit" id="toolkit">
+      <div class="toolkit-title"><div class="eyebrow">CAIXA DE FERRAMENTAS</div><h2>Pequenos minutos.<br><span>Grande exposição.</span></h2><p>Seu plano combina compreensão, atenção à forma e recuperação ativa sem transformar o estudo em mais uma tarefa pesada.</p></div>
+      <div class="toolkit-grid">
+        <article class="tool-card"><span class="tool-number">01</span><div class="tool-icon">🎧</div><h3>Imersão em tempos mortos</h3><p>Deixe o inglês pronto para momentos de caminhada e tarefas leves. Configure dispositivos e feeds para encontrar inglês dos seus interesses.</p></article>
+        <article class="tool-card"><span class="tool-number">02</span><div class="tool-icon">💭</div><h3>Micro-hábitos</h3><p>Narre ações, pense frases curtas e dê nome ao que está ao redor. Pesquise a lacuna no contexto e volte a usar a expressão.</p></article>
+        <article class="tool-card"><span class="tool-number">03</span><div class="tool-icon">🎙️</div><h3>Imersão ativa</h3><p>Faça shadowing, sentence mining e roleplays. Pause vídeos conhecidos para responder e descobrir o que ainda falta dizer.</p></article>
+        <article class="tool-card"><span class="tool-number">04</span><div class="tool-icon">🛢️</div><h3>Barril de conteúdos</h3><p>Pré-selecione até cinco áudios, vídeos e textos. Abra o estudo já sabendo o que vai assistir, ler e praticar.</p></article>
+      </div>
+    </section>
+
+    <section class="resources" id="resources"><div class="eyebrow">SEU BARRIL DE CONTEÚDOS</div><h2>Recursos para deixar à mão</h2><div class="resource-links">
+      <a href="https://learnenglish.britishcouncil.org/skills/listening/b1-listening" target="_blank" rel="noreferrer"><span>British Council</span><b>B1 Listening <i>↗</i></b><small>Escuta graduada com exercícios</small></a>
+      <a href="https://learnenglish.britishcouncil.org/free-resources/general/audio-series" target="_blank" rel="noreferrer"><span>British Council</span><b>Audio Series <i>↗</i></b><small>Histórias intermediárias com apoio</small></a>
+      <a href="https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" target="_blank" rel="noreferrer"><span>BBC Learning English</span><b>6 Minute English <i>↗</i></b><small>Áudio curto e transcrição</small></a>
+      <a href="https://youglish.com/english" target="_blank" rel="noreferrer"><span>Pronúncia em contexto</span><b>YouGlish <i>↗</i></b><small>Ouça expressões em vídeos reais</small></a>
+      <a href="https://dictionary.cambridge.org/" target="_blank" rel="noreferrer"><span>Referência</span><b>Cambridge Dictionary <i>↗</i></b><small>Exemplos e áudio de pronúncia</small></a>
+      <a href="https://www.cambridge.org/gb/cambridgeenglish/catalog/grammar-vocabulary-and-pronunciation/english-grammar-use-5th-edition" target="_blank" rel="noreferrer"><span>Gramática de consulta</span><b>English Grammar in Use <i>↗</i></b><small>Consulte só a unidade da sua lacuna</small></a>
+    </div></section>
+
+    <section class="estimate"><div class="estimate-mark">✳</div><div><div class="eyebrow">EXPECTATIVA REALISTA</div><h2>O progresso é feito de exposição acumulada.</h2><p>Este ciclo organiza as primeiras 12 semanas. Com 15 minutos ativos por dia, a estimativa prudente para B1 → C1 funcional é de <b>4–7 anos ou mais</b>. Conversas regulares e imersão compreensível fora da sessão ajudam a aumentar o contato. Reavalie a cada 12 semanas com um áudio novo, resumo oral e registro das lacunas.</p></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">EQ</span><span>english<span class="brand-light">quest</span></span></a><span>Seu próximo passo: abra a Semana 1 e dê play. ▶</span><span>Feito para aprender no seu ritmo.</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
