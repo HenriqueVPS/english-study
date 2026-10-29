@@ -42,3 +42,6 @@
 .vocab-guidance{margin:0 0 10px;color:#adb7a7;font:400 13px/1.5 var(--sans)}
 .hero-decoration{right:0}
 @media(max-width:640px){.progress-foot{align-items:flex-start;gap:9px;flex-direction:column}.listening-dialog{padding:19px 16px}.confidence-field>div{gap:8px 12px}}
+.lang-button{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border:1px solid #4a5746;border-radius:20px;background:rgba(180,207,131,0.08);color:#d4e6b2;font:600 13.5px var(--sans);text-decoration:none;transition:.2s}
+.lang-button:hover{background:#35492d;border-color:#8aa96a;color:#eef7dc}
+
