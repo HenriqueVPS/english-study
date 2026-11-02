@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151914">
+  <meta name="description" content="Interactive Brazilian Portuguese study roadmap (A1–A2 level) with 15-minute daily sessions, listening practice, grammar in context, and vocabulary.">
+  <title>Portuguese Quest — A1 → A2 (Brazilian Portuguese)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=portuguese-quest-v1-20261102">
+  <script src="app.js?v=portuguese-quest-v1-20261102" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Portuguese Quest Home"><span class="brand-mark">PQ</span><span>portuguese<span class="brand-light">quest</span></span></a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="#roadmap">Roadmap</a><a href="#toolkit">Method</a>
+      <a href="../" class="lang-button" title="Switch to English (B1–C1)">🇬🇧 English</a>
+      <a href="../italian/" class="lang-button" title="Switch to Italian (A2–B1)">🇮🇹 Italian</a>
+      <button class="quiet-button" id="export-button" type="button">Export progress</button>
+      <label class="import-button" for="import-file">Import</label><input id="import-file" type="file" accept="application/json" hidden>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR PLAN · LEVEL A1–A2</div>
+        <h1>Portuguese<br><span>Quest.</span></h1>
+        <p class="hero-description">A practical path to confident conversations in Brazilian Portuguese. Fifteen minutes a day, focused on real everyday life in Brazil.</p>
+        <div class="hero-tags"><span>📖 Grammar</span><span>🎧 Listening</span><span>☕ Everyday Life</span></div>
+      </div>
+      <div class="progress-card">
+        <div class="progress-heading"><div><span class="eyebrow">OVERALL PROGRESS</span><div class="progress-number"><strong id="overall-percent">0%</strong><span>of roadmap completed</span></div></div><div class="progress-icon">↗</div></div>
+        <div class="progress-track"><span id="overall-bar"></span></div>
+        <div class="progress-foot"><span id="completed-count">0 of 91 sessions</span><label class="week-jump-label" for="week-jump">Week <select id="week-jump" aria-label="Jump to week"></select> of 13</label></div>
+        <div class="progress-note"><span>✦</span><span>Your progress is saved in this browser.<br><b>Export a backup</b> before switching devices.</span></div>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">01<br>→<br>13</div>
+    </section>
+
+    <section class="stats-row" aria-label="Plan summary">
+      <div class="stat"><span class="stat-icon">◷</span><div><strong>15 min</strong><small>per day</small></div></div>
+      <div class="stat"><span class="stat-icon">▦</span><div><strong>13 weeks</strong><small>first guided cycle</small></div></div>
+      <div class="stat"><span class="stat-icon">⌁</span><div><strong>Listening + speaking</strong><small>core training focus</small></div></div>
+      <div class="stat"><span class="stat-icon">◎</span><div><strong>6–9 months*</strong><small>prudent estimate to solid A2 / conversational fluency</small></div></div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap">
+      <div class="section-heading"><div><div class="eyebrow">YOUR PATH</div><h2>Study roadmap</h2></div><div class="heading-side">13 weeks · 91 sessions<br><span>Open a week to see daily tasks.</span></div></div>
+      <div class="roadmap-layout">
+        <aside class="roadmap-rail"><div class="rail-line"></div><div class="rail-label active"><i>01</i><span>Starting out</span></div><div class="rail-label"><i>04</i><span>Building momentum</span></div><div class="rail-label"><i>08</i><span>Independence</span></div><div class="rail-label"><i>12</i><span>Towards B1</span></div><div class="rail-caption">A1 → A2 foundations</div></aside>
+        <div class="weeks" id="weeks-container" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="toolkit" id="toolkit">
+      <div class="toolkit-title"><div class="eyebrow">TOOLKIT</div><h2>Small minutes.<br><span>Big exposure.</span></h2><p>Your plan combines listening comprehension, awareness of Brazilian speech patterns, and active recall without turning language learning into a chore.</p></div>
+      <div class="toolkit-grid">
+        <article class="tool-card"><span class="tool-number">01</span><div class="tool-icon">🎧</div><h3>Downtime immersion</h3><p>Keep Brazilian Portuguese handy during walks and chores. Listen to podcasts like Speaking Brazilian, Carioca Connection, and Easy Portuguese.</p></article>
+        <article class="tool-card"><span class="tool-number">02</span><div class="tool-icon">💭</div><h3>Micro-habits</h3><p>Narrate simple actions in Portuguese: <em>“Vou fazer um cafezinho”</em>, <em>“Tô saindo agora”</em>. Speak short phrases aloud throughout your day.</p></article>
+        <article class="tool-card"><span class="tool-number">03</span><div class="tool-icon">🎙️</div><h3>Active immersion</h3><p>Do shadowing, sentence mining, and roleplays: ordering at a boteco, buying fruit at the feira livre, asking directions, and chatting casually.</p></article>
+        <article class="tool-card"><span class="tool-number">04</span><div class="tool-icon">🛢️</div><h3>Content barrel</h3><p>Pre-select up to five audios and videos each week. Start each session knowing exactly what you will listen to, read, and practice.</p></article>
+      </div>
+    </section>
+
+    <section class="resources" id="resources"><div class="eyebrow">YOUR CONTENT BARREL</div><h2>Resources to keep close at hand</h2><div class="resource-links">
+      <a href="https://www.youtube.com/@EasyPortugueseVideos" target="_blank" rel="noreferrer"><span>Easy Portuguese</span><b>Easy Portuguese <i>↗</i></b><small>Authentic street interviews with dual subtitles</small></a>
+      <a href="https://www.youtube.com/@SpeakingBrazilian" target="_blank" rel="noreferrer"><span>Speaking Brazilian</span><b>Virginia Langhammer <i>↗</i></b><small>Clear pronunciation, grammar, and Brazilian culture</small></a>
+      <a href="https://youglish.com/portuguese" target="_blank" rel="noreferrer"><span>Pronunciation in context</span><b>YouGlish Portuguese <i>↗</i></b><small>Hear native Brazilian speakers in real videos</small></a>
+      <a href="https://www.wordreference.com/pten/" target="_blank" rel="noreferrer"><span>Dictionary & Verbs</span><b>WordReference PT-EN <i>↗</i></b><small>Definitions, usage examples, and verb conjugations</small></a>
+      <a href="https://streetsmartbrazil.com/" target="_blank" rel="noreferrer"><span>Colloquial Brazilian</span><b>Street Smart Brazil <i>↗</i></b><small>Natural idioms, daily slangs, and cultural tips</small></a>
+      <a href="https://www.radionovelo.com.br/" target="_blank" rel="noreferrer"><span>Authentic listening</span><b>Rádio Novelo Podcasts <i>↗</i></b><small>Engaging real-life stories and natural Brazilian speech</small></a>
+    </div></section>
+
+    <section class="estimate"><div class="estimate-mark">✳</div><div><div class="eyebrow">REALISTIC EXPECTATIONS</div><h2>Progress comes from accumulated exposure.</h2><p>This cycle organizes your first 13 weeks of Brazilian Portuguese (A1–A2 level). With 15 active minutes per day, the realistic estimate to consolidate A2 and build a solid bridge to conversational B1 fluency is <b>6–9 months</b> of consistent contact. Casual conversations with natives and immersive input outside study sessions accelerate your growth tremendously.</p></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">PQ</span><span>portuguese<span class="brand-light">quest</span></span></a><span>Next step: open Week 1 and hit play. ▶</span><span>Designed to learn at your own pace.</span></footer>
+  
+  <dialog class="listening-dialog" id="listening-dialog" aria-labelledby="listening-title">
+    <div class="vocab-dialog-head"><div><div class="eyebrow">GUIDED PRACTICE · 15 MIN</div><h2 id="listening-title">Listening in 4 passes</h2></div><button class="dialog-close" id="listening-close" type="button" aria-label="Close listening training">×</button></div>
+    <p class="listening-intro" id="listening-intro"></p>
+    <button class="video-open-button listening-video-button" id="listening-video-open" type="button">Open this week's video ▶</button>
+    <div class="listening-steps" id="listening-steps"></div>
+    <div class="listening-history" id="listening-history" aria-live="polite"></div>
+    <fieldset class="confidence-field"><legend>How much did you understand without subtitles?</legend><div><label><input type="radio" name="listening-confidence" value="1"> Hardly anything</label><label><input type="radio" name="listening-confidence" value="2"> The main idea</label><label><input type="radio" name="listening-confidence" value="3"> Most of it</label><label><input type="radio" name="listening-confidence" value="4"> Almost everything</label></div></fieldset>
+    <label class="listening-note-label" for="listening-note">Note down a sentence or tricky gap to review <span>(optional)</span></label><textarea id="listening-note" rows="2" maxlength="240" placeholder="E.g.: I missed the phrase after “a gente costuma…”"></textarea>
+    <button id="listening-save" class="complete-button listening-save" type="button">Save reflection</button>
+  </dialog>
+  
+  <dialog class="vocab-dialog" id="vocab-dialog" aria-labelledby="vocab-dialog-title">
+    <div class="vocab-dialog-head"><div><div class="eyebrow">VOCABULARY CARD</div><h2 id="vocab-dialog-title"></h2></div><button class="dialog-close" id="vocab-close" type="button" aria-label="Close card">×</button></div>
+    <div class="vocab-meaning"><div class="vocab-section-label">MEANING IN ENGLISH</div><p id="vocab-translation" aria-live="polite">Looking up translation…</p><small id="vocab-meaning-note">Contextual meaning for this roadmap; use examples to see it in real speech.</small></div>
+    <div class="vocab-examples"><div class="vocab-section-label">EVERYDAY USAGE</div><div id="vocab-example-list"></div></div>
+    <div class="vocab-related-video" id="vocab-related-video" hidden><div><div class="vocab-section-label">HEAR IN CONTEXT</div><p id="vocab-video-title"></p></div><button id="vocab-video-open" class="video-open-button" type="button">Watch video ▶</button></div>
+    <div class="vocab-dialog-actions"><div class="vocab-reference-links"><a id="vocab-youglish" target="_blank" rel="noreferrer">Hear real examples ↗</a><a id="vocab-wordreference" target="_blank" rel="noreferrer">View on WordReference ↗</a></div><button id="vocab-complete" class="complete-button" type="button">Mark as learned</button></div>
+    <p class="vocab-privacy-note">When a term is not in the local glossary, only the Portuguese phrase is sent to the translation service. Results stay saved in this browser.</p>
+  </dialog>
+  
+  <dialog class="video-dialog" id="video-dialog" aria-labelledby="video-dialog-title">
+    <div class="video-dialog-head"><div><div class="eyebrow" id="video-dialog-channel"></div><h2 id="video-dialog-title"></h2><p id="video-dialog-focus"></p></div><button class="dialog-close" id="video-close" type="button" aria-label="Close video">×</button></div>
+    <div class="video-frame"><iframe id="video-frame" title="Recommended Brazilian Portuguese study video" src="about:blank" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="video-dialog-foot"><p id="video-dialog-task"></p><a id="video-youtube-link" target="_blank" rel="noreferrer">Open on YouTube ↗</a></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
